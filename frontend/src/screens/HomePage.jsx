@@ -24,17 +24,79 @@ export default class HomePage extends Component {
 
             </div>
 
-            <p className="mt-8 text-white w-2/3 text-wrap"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi enim, dolor facilis accusamus maxime, fugit laudantium itaque earum, rem incidunt temporibus praesentium quae esse tempore autem dolorum quibusdam neque aperiam similique nulla architecto. Ratione soluta unde nulla quod? Et libero vel asperiores quam, eveniet est odio dicta .</p>
+            <p className="mt-8 text-white w-2/3 text-wrap text-xl">Planes vanish with no trace. Ships sink with no wreckage. Communications cut off with no warning. We explore the mysteries of the Bermuda triangle.</p>
 
           </div>
           <div className="lstnon flex -ml-2 space-x-4">
             <img src="/images/spotifylisten.png" className='mt-4 w-46 h-[85px]' alt="" />
             <img src="/images/apple-podcast.png" className='mt-6 w-46 h-[68px]' alt="" />
-            {/* <img src="/images/applepodcast.png" className='w-20 h-10 scale-1' alt="" /> */}
           </div>
+
+          <p className="text-white py-10 font-[600] text-xl">Latest episode of Bermuda triangle</p>
 
 
         </div>
+
+        <div className="px-24 flex space-x-6 pb-7">
+
+        <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane-in-sky.jpg)] bg-cover rounded-lg">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
+            <div className="relative p-4">
+              <h1 className="text-white font-[600]">The lost black box</h1>
+              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
+              <p className="pt-2 text-sm text-white">EP 23 | 42min 23 sec</p>
+            </div>
+          </div>
+
+          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane-in-sky.jpg)] bg-cover rounded-lg">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
+            <div className="relative p-4">
+              <h1 className="text-white font-[600]">The lost black box</h1>
+              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
+              <p className="pt-2 text-sm text-white">EP 23 | 42min 23 sec</p>
+            </div>
+          </div>
+
+          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane-in-sky.jpg)] bg-cover rounded-lg">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
+            <div className="relative p-4">
+              <h1 className="text-white font-[600]">The lost black box</h1>
+              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
+              <p className="pt-2 text-sm text-white">EP 23 | 42min 23 sec</p>
+            </div>
+          </div>
+
+          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane-in-sky.jpg)] bg-cover rounded-lg">
+            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
+            <div className="relative p-4">
+              <h1 className="text-white font-[600]">The lost black box</h1>
+              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
+              <p className="pt-2 text-sm text-white">EP 23 | 42min 23 sec</p>
+            </div>
+          </div>
+
+          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane-in-sky.jpg)] bg-cover rounded-lg">
+  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
+  <div className="relative p-4">
+    <h1 className="text-white font-[600]">The lost black box</h1>
+    <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
+    <p className="pt-2 text-sm text-white">EP 23 | 42min 23 sec</p>
+    <button className="absolute bottom-4 right-4 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full flex items-center justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M5 3v18l15-9L5 3z" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+        </div>
+
+
+
 
 
       </>
