@@ -19,7 +19,7 @@ export default class HomePage extends Component {
           </div>
 
           <div className="hero_text">
-            <h1 className="text-white text-6xl font-[600]">Listen to the mystical stories</h1>
+            <h1 className="text-white text-6xl font-[600]">Dive into the mystical stories</h1>
             <div className="grp flex space-x-4">
               <h1 className="text-white text-6xl font-[600] pt-5">of the</h1>
               <h1 className="text-[#f53d68] text-6xl font-[600] pt-5">Bermuda triangle</h1>
@@ -39,7 +39,7 @@ export default class HomePage extends Component {
 
           {/* latest podcast */}
 
-          <p className="text-white py-10 font-[600] text-xl">Latest episode of Bermuda triangle</p>
+          <p className="text-white py-10 font-[600] text-xl">Latest articles about Bermuda triangle</p>
 
 
         </div>
@@ -113,7 +113,7 @@ export default class HomePage extends Component {
 
 
         <div className="px-36 py-5 ">
-        <p className="text-white py-10 font-[600] text-xl">Trending podcasts on <b className='text-[#f53d68]'> Around the campfire </b></p>
+        <p className="text-white py-10 font-[600] text-xl">Trending article on <b className='text-[#f53d68]'> Around the campfire </b></p>
         </div>
 
         {/* episode cards */}
