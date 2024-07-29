@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     background-color: #0e1226;
     /* background-color: #DFDBE5; */
-    
+
 }
-.abhay{
+
+.abhay {
     background-size: cover;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, .7), transparent 85%), url('/images/plane-in-sky.jpg');
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }

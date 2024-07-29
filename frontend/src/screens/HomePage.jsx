@@ -1,176 +1,99 @@
 import { Component } from 'react'
+import Footer from '../components/Footer'
+import { FaPlay, FaSpotify } from 'react-icons/fa'
+import { SiApplemusic } from "react-icons/si";
+import '../scroll';
+import PodcastSection from '../components/PodcastSection'
+
 
 export default class HomePage extends Component {
   render() {
     return (
       <>
-        <div className="homesection px-44 py-5 ">
+
+        <div className="homesection px-5 lg:px-28 lg:py-5  ">
 
           {/* hero text */}
 
-          <div className="tickerban bg-[hsl(351,100%,95%)] p-2 rounded-full mb-5 w-1/3">
-            <div className="inerp flex">
-              <p href="" className="newbtn bg-[#f63d68] font-[600] text-white py-2 px-4 rounded-3xl">New</p>
-              <p className="ml-2 py-2 text-[#f63d68] font-[700]">Bermuda triangle series :</p>
+          {/* fix this */}
 
-            </div>
 
+
+          <div className=" mt-10 ticker bg-[hsl(351,100%,95%)] flex space-x-2 w-fit py-1.5 rounded-full mb-5
+        ">
+            <p href="" className="newbtn bg-[#f63d68] font-[600] text-white py-2 px-4 lg:rounded-3xl lg:ml-2 rounded-full ml-2">New</p>
+            <p className="ml-2 py-2 text-[#f63d68] font-[700] pr-10 flex">Bermuda triangle series <FaPlay className='ml-2 mt-1 lg:mt-1.5' size={14} /></p>
 
           </div>
 
           <div className="hero_text">
-            <h1 className="text-white text-6xl font-[600]">Dive into the mystical stories</h1>
+            <h1 className="text-white text-3xl lg:text-6xl font-[600]">Dive into the mystical stories of the</h1>
             <div className="grp flex space-x-4">
-              <h1 className="text-white text-6xl font-[600] pt-5">of the</h1>
-              <h1 className="text-[#f53d68] text-6xl font-[600] pt-5">Bermuda triangle</h1>
+
+              <h1 className="text-[#f53d68] text-4xl lg:text-6xl font-[600] lg:pt-5 pt-2">Bermuda triangle</h1>
 
             </div>
 
-            <p className="mt-8 text-white w-2/3 text-wrap text-xl">Planes vanish with no trace. Ships sink with no wreckage. Communications cut off with no warning. We explore the mysteries of the Bermuda triangle.</p>
+            <p className="mt-8 text-white lg:w-2/3 text-wrap text-md lg:text-xl">Planes vanish with no trace. Ships sink with no wreckage. Communications cut off with no warning. We explore the mysteries of the Bermuda triangle.</p>
 
           </div>
           {/* end hero text */}
 
-          {/* listen on */}
-          <div className="lstnon flex -ml-2 space-x-4">
-            <img src="/images/spotifylisten.png" className='mt-4 w-46 h-[85px]' alt="" />
-            <img src="/images/apple-podcast.png" className='mt-6 w-46 h-[68px]' alt="" />
+
+
+
+          <div className="flex ">
+
+
+
+            <div className="flex mt-6 w-fit space-x-2">
+
+
+              <div className="btn flex bg-black space-x-2 py-2 px-3 border-white border rounded-lg">
+                <FaSpotify color='#18d860' size={36} className='mt-1' />
+                <div className="text">
+                  <p className='text-white font-semibold -mb-2'>Listen on</p>
+                  <p className="text-[#18d860] font-bold text-xl spotify">Spotify</p>
+                </div>
+              </div>
+              <div className="btn flex bg-black space-x-2 py-2 px-3 border-white border rounded-lg">
+                <SiApplemusic color='#c265ec' size={36} className='mt-1' />
+                <div className="text">
+                  <p className='text-white font-semibold -mb-2'>Listen on</p>
+                  <p className="text-[#c265ec] font-bold text-xl">Apple Music</p>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+
           </div>
 
           {/* latest podcast */}
 
-          <p className="text-white py-10 font-[600] text-xl">Latest articles about Bermuda triangle</p>
+          <p className="text-white py-10 font-[600] text-xl">Latest podcasts about Bermuda triangle</p>
 
 
         </div>
 
         {/* episode cards */}
 
-        <div className="px-24 flex space-x-6 pb-7">
-
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane-in-sky.jpg)] bg-cover rounded-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-            </div>
-          </div>
-
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane2.jpg)] bg-cover rounded-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-            </div>
-          </div>
-
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane3.jpg)] bg-cover rounded-lg bg-center">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-            </div>
-          </div>
-
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/ship1.jpg)] bg-cover rounded-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-            </div>
-          </div>
-
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/ship2.jpg)] bg-cover rounded-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-              <button className="absolute bottom-4 right-4 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M5 3v18l15-9L5 3z" />
-                </svg>
-              </button>
-            </div>
-          </div>
+        <PodcastSection />
 
 
-
-
-
-
-
-
-
-        </div>
         {/*end latest podcasts  */}
 
-        {/* other podcasts */}
+
+        {/* Footer */}
+        <Footer />
 
 
-        <div className="px-36 py-5 ">
-        <p className="text-white py-10 font-[600] text-xl">Trending article on <b className='text-[#f53d68]'> Around the campfire </b></p>
-        </div>
 
-        {/* episode cards */}
-        <div className="px-24 flex space-x-6 pb-7">
 
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane-in-sky.jpg)] bg-cover rounded-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-            </div>
-          </div>
 
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane2.jpg)] bg-cover rounded-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-            </div>
-          </div>
-
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/plane3.jpg)] bg-cover rounded-lg bg-center">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-            </div>
-          </div>
-
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/ship1.jpg)] bg-cover rounded-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-            </div>
-          </div>
-
-          <div className="relative pt-48 h-80 w-56 bg-[url(/images/ship2.jpg)] bg-cover rounded-lg">
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-lg"></div>
-            <div className="relative p-4">
-              <h1 className="text-white font-[600]">The lost black box</h1>
-              <p className="text-white text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ducimus.</p>
-              <p className="pt-2 text-sm text-white">EP 23 | 42 min 23 sec</p>
-              <button className="absolute bottom-4 right-4 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-2 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M5 3v18l15-9L5 3z" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        
 
 
 
