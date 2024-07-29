@@ -1,5 +1,8 @@
 import React, { Component, createRef } from 'react';
 import { IoMenuOutline } from 'react-icons/io5';
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { BsTwitterX } from "react-icons/bs";
 
 class Drawer extends Component {
     constructor(props) {
@@ -24,20 +27,29 @@ class Drawer extends Component {
     render() {
         return (
             <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 z-50 ${this.props.isOpen ? 'block' : 'hidden'}`}>
-                <div ref={this.drawerRef} className="absolute top-0 right-0 w-64 h-full bg-white shadow-lg p-5">
-                    <button onClick={this.props.onClose} className="text-black">Close</button>
-                    <ul className='mt-5 space-y-4'>
-                        <li><a href="/latest" className="text-black">Latest articles</a></li>
-                        <li><a href="#" className="text-black">Mysteries</a></li>
-                        <li><a href="#" className="text-black">Guests</a></li>
-                        <li><a href="#" className="text-black">About</a></li>
-                        <li><a href="#" className="text-black">Contact</a></li>
+                <div ref={this.drawerRef} className="absolute top-0 right-0 w-64 h-full bg-gray-800 shadow-lg p-5 flex flex-col">
+                    {/* <button onClick={this.props.onClose} className="text-black">Close</button> */}
+                    <img src="/images/logo-removebg.png" alt="" />
+                    <ul className='mt-5 space-y-4 flex-grow'>
+                        <li><a href="/latest" className="text-white">Latest Podcasts</a></li>
+                        <li><a href="#" className="text-white">Mysteries</a></li>
+                        <li><a href="#" className="text-white">Guests</a></li>
+                        <li><a href="#" className="text-white">About</a></li>
+                        <li><a href="#" className="text-white">Contact</a></li>
+                    </ul>
+                    <ul className='mt-5 space-x-4 flex flex-wrap justify-center'>
+                        <li className='text-[#f53d68] pt-1 w-4 h-9'><a href=""><FaFacebook /></a></li>
+                        <li className='text-[#f53d68] pt-1 w-4 h-9'><a href=""><BsTwitterX /></a></li>
+                        <li className='text-[#f53d68] pt-1 w-4 h-9'><a href=""><AiFillInstagram /></a></li>
+                        <li className='text-[#f53d68] pt-1 w-4 h-9'><a href=""><FaLinkedin /></a></li>
                     </ul>
                 </div>
             </div>
         );
     }
 }
+
+// Drawer end
 
 export default class xsNavbar extends Component {
     constructor(props) {

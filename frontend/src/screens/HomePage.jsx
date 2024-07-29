@@ -17,12 +17,10 @@ export default class HomePage extends Component {
 
           {/* fix this */}
 
-
-
           <div className=" mt-10 ticker bg-[hsl(351,100%,95%)] flex space-x-2 w-fit py-1.5 rounded-full mb-5
         ">
             <p href="" className="newbtn bg-[#f63d68] font-[600] text-white py-2 px-4 lg:rounded-3xl lg:ml-2 rounded-full ml-2">New</p>
-            <p className="ml-2 py-2 text-[#f63d68] font-[700] pr-10 flex">Bermuda triangle series <FaPlay className='ml-2 mt-1 lg:mt-1.5' size={14} /></p>
+            <p className="ml-2 py-2 text-[#f63d68] font-[700] pr-10 flex">Bermuda triangle series <FaPlay className='ml-2 mt-1.5 lg:mt-1.5' size={14} /></p>
 
           </div>
 
@@ -63,30 +61,16 @@ export default class HomePage extends Component {
                   <p className="text-[#c265ec] font-bold text-xl">Apple Music</p>
                 </div>
               </div>
-
-
-
             </div>
-
-
-
           </div>
 
           {/* latest podcast */}
 
           <p className="text-white py-10 font-[600] text-xl">Latest podcasts about Bermuda triangle</p>
-
-
+          <PodcastSection />
+          <p className="text-white py-10 font-[600] text-xl">Most played on ATCampfire</p>
+          <PodcastSection />
         </div>
-
-        {/* episode cards */}
-
-        <PodcastSection />
-
-
-        {/*end latest podcasts  */}
-
-
         {/* Footer */}
         <Footer />
 
