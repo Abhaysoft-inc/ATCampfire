@@ -19,6 +19,7 @@ export default function PodcastScreen() {
                 </div>
                 <div className="podcast-player mx-10 mt-5">
                     <Slider defaultValue={0} aria-label='' valueLabelDisplay='off' className='mt-2' />
+
                     <div className="music-timer flex justify-between text-slate-400 -mt-3">
                         <p className="start">00:00</p>
                         <p className="end">60:00</p>

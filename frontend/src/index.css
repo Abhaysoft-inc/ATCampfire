@@ -24,3 +24,7 @@ body {
     display: none;
     /* Safari and Chrome */
 }
+
+.MuiSlider-thumb {
+    display: none;
+}

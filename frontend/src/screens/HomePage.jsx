@@ -4,7 +4,7 @@ import { FaPlay, FaSpotify } from 'react-icons/fa';
 import { SiApplemusic } from 'react-icons/si';
 import PodcastSection from '../components/PodcastSection';
 
-const texts = ['Bermuda triangle', 'The mysterious depths', 'Unsolved enigmas'];
+const texts = ['Bermuda Triangle', 'The Mysterious Depths', 'Unsolved Enigmas'];
 
 export default function HomePage() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -48,7 +48,7 @@ export default function HomePage() {
         <div className="hero_text">
           <h1 className="text-white text-3xl lg:text-6xl font-[600]">Dive into the mystical stories of the</h1>
           <div className="grp flex space-x-4">
-            <h1 className="text-[#f53d68] text-4xl lg:text-6xl font-[600] lg:pt-5 pt-2">{displayedText}</h1>
+            <h1 className="text-[#f53d68] text-4xl lg:text-6xl font-[600] lg:pt-5 pt-2 min-h-[80px]">{displayedText}</h1>
           </div>
           <p className="mt-8 text-white lg:w-2/3 text-wrap text-md lg:text-xl">
             Planes vanish with no trace. Ships sink with no wreckage. Communications cut off with no warning. We explore the mysteries of the Bermuda triangle.
