@@ -1,13 +1,15 @@
 const express = require("express");
-const app = express();
+const app = express()
+require('./config/db.config');
+const userRoute = require("./routes/user.routes")
 
-app.use('/', (req, res) => {
-    res.send("Hello ABhay")
-})
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
+
+app.use('/user', userRoute)
 
 
-const PORT = 8000;
 
-app.listen(PORT, () => {
-    console.log(`Server is Listening on ${PORT}`);
-});
+
+
+app.listen(3000, () => console.log("Server is running on port 3000"))
