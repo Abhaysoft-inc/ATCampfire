@@ -1,9 +1,9 @@
 const express = require("express")
 const router = express.Router()
-const userModel = require("../model/user.model")
+const userModel = require("../model/user.model");
 
 router.post("/signup", (req, res) => {
-    const { username, password } = req.body
+    const { username, password } = req.body;
 
     // Check if username and password are provided
     if (!username || !password) {

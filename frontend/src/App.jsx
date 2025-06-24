@@ -13,8 +13,7 @@ import LatestArticlesPage from './screens/LatestArticlesPage';
 import Login from './screens/admin/Login';
 import Posts from './screens/admin/Posts';
 import PodcastScreen from './screens/PodcastScreen';
-import Footer from './components/Footer';
-import Drawer from './components/Drawer';
+import SignupPage from './screens/auth/Signup';
 
 function App() {
   return (
@@ -31,6 +30,10 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/posts' element={<Posts />} />
           <Route path='/podcast' element={<PodcastScreen />} />
+
+          {/* auth */}
+
+          <Route path='/signup' element={<SignupPage />} />
 
         </Routes>
       </BrowserRouter>
