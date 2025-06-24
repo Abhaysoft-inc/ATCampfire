@@ -14,6 +14,7 @@ import Login from './screens/admin/Login';
 import Posts from './screens/admin/Posts';
 import PodcastScreen from './screens/PodcastScreen';
 import SignupPage from './screens/auth/Signup';
+import UploadPodcastPage from './screens/UploadPodcast'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/posts' element={<Posts />} />
           <Route path='/podcast' element={<PodcastScreen />} />
+          <Route path='/upload' element={<UploadPodcastPage />} />
 
           {/* auth */}
 

@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express()
 require('./config/db.config');
-const userRoute = require("./routes/user.routes")
+const userRoute = require("./routes/user.routes");
+const podcastRoute = require("./routes/podcast.routes")
+
 const cors = require('cors')
 
 app.use(cors());
@@ -9,7 +11,8 @@ app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/auth', userRoute)
+app.use('/auth', userRoute);
+app.use('/podcast', podcastRoute)
 
 
 
