@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express()
+const dotenv = require("dotenv")
 require('./config/db.config');
 const userRoute = require("./routes/user.routes");
 const podcastRoute = require("./routes/podcast.routes")
+dotenv.config()
 
 const cors = require('cors')
 
